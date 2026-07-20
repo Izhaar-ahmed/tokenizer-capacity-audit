@@ -20,7 +20,7 @@ partC/memo.md         # C: decision memo
 | A4 recommendation memo | 8 | `partA/memo.md` |
 | B1-B4 capacity reconciliation | 20 | `partB/ANSWERS.md` (plus `partB/partB_check.py`) |
 | C decision memo | 15 | `partC/memo.md` |
-| Defense | 15 | live session, see "Before the defense" below |
+| Defense | 15 | live session |
 
 ## Quick start
 
@@ -32,13 +32,3 @@ python3 partB/partB_check.py               # stdlib only
 ```
 
 Every number in `RESULTS.md`, `ANSWERS.md`, and the memos came out of running these, nothing's typed in by hand.
-
-## Before the defense
-
-Things I want to be able to re-derive cold, without looking anything up:
-- KV bytes per token (112 KiB), and why it's 8 KV heads and not 24 Q heads. Grouped-query attention, not a typo.
-- Why lowercasing made v0's ratio look smaller than it should, not bigger. Counter-intuitive, and I only trust it because I measured it.
-- Running `partA/bug_isolation.py` or `partA/corrected_analysis.py` against whatever gets pasted at me live, and having a rough sense of what should happen before I hit enter.
-- What changes in B2 if the KV cache were fp8 instead of fp16 (capacity roughly doubles, the cliff moves past batch 48).
-- Why tok/parallel-sentence is the right denominator and the other three aren't, comes straight from the assignment's own hint about what a denominator should hold constant.
-- The Telugu translation quality issue in the corpus, since it's the one thing here that came from actually reading the language rather than running a script.
