@@ -1,6 +1,6 @@
 # AI usage
 
-I used Claude for this, agentically, writing code, running it, fetching data, not just as a chat assistant I copy pasted from. Here's where it actually helped and where it got things wrong, as honestly as I can put it.
+I used Claude for this, agentically, writing code, running it, fetching data, not just as a chat assistant I copy pasted from. Here's where it actually helped and where it got things wrong, as honestly as I can put it. And also used Chatgpt to understand the starter kit given by you.
 
 ## Where it helped
 
